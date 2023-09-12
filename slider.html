@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- привязка к главной странице -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Первый слайдер</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__wrap">
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <a href="#" class="logo" id="logo">Korytkin<br>Vladimir</a>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="slider.html">Слайдер</a></li>
+                    <li><a href="forms.html">Форма связи</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="content">
+                <h1>ПЕРВЫЙ СЛАЙДЕР</h1>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="slider__wrap">
+
+        <div id="slider__viewport" class="slider__viewport">
+            <div class="slider">
+                <div class="slide"><img src="img/1.1.webp" alt="1" title="1"></div>
+                <div class="slide"><img src="img/2.1.webp" alt="2" title="2"></div>
+                <div class="slide"><img src="img/3.1.webp" alt="3" title="3"></div>
+                <div class="slide"><img src="img/4.1.webp" alt="4" title="4"></div>
+                <div class="slide"><img src="img/5.1.webp" alt="5" title="5"></div>
+            </div>
+        </div>
+
+        <div class="slider__pagination">
+            <div id="viewSlider">
+                <div class="viewSlide"></div>
+                <div class="viewSlide"></div>
+                <div class="viewSlide"></div>
+                <div class="viewSlide"></div>
+                <div class="viewSlide"></div>
+            </div>
+        </div>
+
+
+        <div class="slider__control">
+            <button class="slider__control-button slider__control-prev" id="slider__control-prev">Назад</button>
+            <button class="slider__control-button slider__control-next" id="slider__control-next">Вперёд</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="content">
+            &copy; 2023 Korytkin
+          </div>
+        </div>
+      </footer>
+    <script src="assets/js/app1.js"></script>
+</body>
+
+</html>

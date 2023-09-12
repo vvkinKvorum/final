@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/calc.css" />
+    
+
+    <title>Калькулятор</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="#" class="logo" id="logo">Корыткин<br>Владимир</a>
+          <ul class="menu" id="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Слайдер</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <div class="popup" id="popup"></div>
+
+
+
+    <header class="header">
+      <div class="container">
+        <div class="content">
+          <h1>калькулятор</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="content">
+
+
+        	<style>
+        		.calc {}
+        		.calc__fieldset {
+        			display: flex;
+        			align-items: center;
+        			margin-bottom: 20px;
+        		}
+        		.calc__label {
+        			font-size: 20px;
+        			margin-bottom: 5px;
+        			display: block;
+        			margin-right: 20px;
+        		}
+        		.calc__inp {
+        			font-size: 20px;
+        		}
+        		.calc__total {
+        			font-size: 30px;
+        		}
+        		.calc__text {
+        			font-size: 20px;
+        		}
+        	</style>
+          
+
+        	<div class="calc">
+        		<div class="calc__fieldset">
+        			<label for="" class="calc__label">Площадь дома</label>
+        			<input type="number" class="calc__inp" id="square" value="0" min="0" max="3000" onchange='calculateCost();'>
+        		</div>
+        		<div class="calc__fieldset">
+        			<label for="" class="calc__label">Кол-во этажей</label>
+        			<input type="number" class="calc__inp" id="floor" value="0" min="0" max="113" onchange='calculateCost();'>
+        		</div>
+        		<div class="calc__fieldset">
+        			<label for="" class="calc__label">Материал изготовления</label>
+        			<select name="" class="calc__inp" id="materialType" onchange='calculateCost();'>
+        				<option value="0">---</option>
+        				<option value="1">Пластмасс (1000)</option>
+        				<option value="2">Дерево (2000)</option>
+        				<option value="3">Металл (3000)</option>
+        				<option value="4">Бетон (4000)</option>
+        			</select>
+        		</div>
+
+        		<div class="calc__fieldset">
+        			<div class="calc__total">Цена <span id="totalCost" style="font-weight: bold;">Х</span> руб</div>
+        		</div>
+
+        		<div class="calc__fieldset">
+        			<div class="calc__text">Текст про оффер от менеджера
+                <ulul type="disc">
+                <li>Пишите кратко. Заинтересовать пользователя нужно сразу. Не сможете это сделать в 2–3 первых предложениях — пролетите над успехом в соцсетях, как фанера над Парижем.</li>
+                <li>Не пытайтесь снять все возражения одним постом. Пользователя социальных сетей обычно нельзя сразу закрыть на продажу. Сначала нужен прогрев, поэтому мотивируйте на подписку, получение бесплатного продукта или другой лид-магнит. И только после прогрева продавайте.</li>
+                <li>Визуал — важная часть оффера. Тухлая картинка может похоронить даже самое крутое предложение.</li>
+              </ulul>
+
+              </div>
+        		</div>
+        	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          &copy; 2023 Volosunov
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
